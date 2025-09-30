@@ -8,4 +8,4 @@ It follows the class guidance to favor **Ridge/LASSO/Elastic Net** over OLS due 
 - figures/ # PNGs exported by notebooks (pred vs actual, residuals, CV curves, etc.)
 - notebooks/ # Reproducible notebooks for EDA → Cleaning → Feature Engineering → Modeling
 - outputs/ # CSV metrics (cv_results_*.csv, val_metrics.csv, test_metrics.csv, coefficients, etc.)
-- README.md
+- Bitcoin_Project_Report.docx: full writeup on project detailing methodologies and rationale
