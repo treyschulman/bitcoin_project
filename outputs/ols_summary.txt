@@ -1,0 +1,69 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:              target_t7   R-squared:                       0.972
+Model:                            OLS   Adj. R-squared:                  0.972
+Method:                 Least Squares   F-statistic:                     1518.
+Date:                Mon, 29 Sep 2025   Prob (F-statistic):               0.00
+Time:                        21:20:37   Log-Likelihood:                -9591.3
+No. Observations:                1895   AIC:                         1.927e+04
+Df Residuals:                    1851   BIC:                         1.951e+04
+Df Model:                          43                                         
+Covariance Type:            nonrobust                                         
+========================================================================================================
+                                           coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------------------------------
+const                                  -24.7805     30.153     -0.822      0.411     -83.918      34.357
+btc_market_price                         0.8784      0.067     13.029      0.000       0.746       1.011
+btc_total_bitcoins                    7.431e-06   1.52e-06      4.905      0.000    4.46e-06    1.04e-05
+btc_trade_volume                     -3.859e-08    8.6e-08     -0.449      0.654   -2.07e-07     1.3e-07
+btc_avg_block_size                     -18.0587     26.292     -0.687      0.492     -69.624      33.506
+btc_median_confirmation_time            -0.2840      0.312     -0.910      0.363      -0.896       0.328
+btc_hash_rate                        -8.292e-05   2.39e-05     -3.462      0.001      -0.000   -3.59e-05
+btc_transaction_fees                     0.1584      0.080      1.991      0.047       0.002       0.314
+btc_cost_per_transaction                 1.4258      0.276      5.170      0.000       0.885       1.967
+btc_n_unique_addresses                9.064e-05   6.73e-05      1.348      0.178   -4.13e-05       0.000
+btc_n_transactions                       0.0002      0.000      1.919      0.055   -5.16e-06       0.000
+btc_output_volume                     3.167e-07   7.28e-07      0.435      0.663   -1.11e-06    1.74e-06
+btc_estimated_transaction_volume     -1.041e-06   4.42e-06     -0.236      0.814    -9.7e-06    7.62e-06
+btc_market_price_lag1                   -0.1239      0.078     -1.581      0.114      -0.278       0.030
+btc_market_price_lag7                    0.0445      0.069      0.647      0.518      -0.090       0.179
+btc_market_price_lag14                   0.0339      0.054      0.627      0.531      -0.072       0.140
+btc_market_price_lag30                  -0.0030      0.030     -0.098      0.922      -0.063       0.057
+btc_market_price_ma7                     0.9235      0.133      6.918      0.000       0.662       1.185
+btc_market_price_ma14                   -1.5156      0.182     -8.308      0.000      -1.873      -1.158
+btc_market_price_ma30                    0.5439      0.103      5.292      0.000       0.342       0.745
+btc_market_price_std7                    0.7706      0.154      5.018      0.000       0.469       1.072
+btc_market_price_std14                   0.3061      0.153      1.999      0.046       0.006       0.606
+btc_market_price_std30                  -0.0495      0.088     -0.562      0.574      -0.222       0.123
+dow_1                                    1.0906      3.360      0.325      0.746      -5.499       7.680
+dow_2                                    1.2499      3.358      0.372      0.710      -5.336       7.836
+dow_3                                    1.2872      3.346      0.385      0.701      -5.275       7.849
+dow_4                                    0.2765      3.341      0.083      0.934      -6.276       6.829
+dow_5                                   -1.8782      3.374     -0.557      0.578      -8.495       4.738
+dow_6                                   -3.4825      3.473     -1.003      0.316     -10.293       3.328
+month_2                                 -2.4123      4.575     -0.527      0.598     -11.385       6.561
+month_3                                  1.3818      4.540      0.304      0.761      -7.522      10.285
+month_4                                 -5.6923      4.616     -1.233      0.218     -14.745       3.361
+month_5                                 14.0865      4.591      3.068      0.002       5.082      23.091
+month_6                                  7.3543      4.719      1.559      0.119      -1.900      16.609
+month_7                                  8.8870      4.644      1.913      0.056      -0.222      17.996
+month_8                                 -1.4680      4.626     -0.317      0.751     -10.541       7.605
+month_9                                 -1.3871      4.604     -0.301      0.763     -10.417       7.642
+month_10                                10.8049      4.403      2.454      0.014       2.170      19.440
+month_11                                30.5055      4.587      6.651      0.000      21.509      39.502
+month_12                                -0.3340      4.673     -0.071      0.943      -9.499       8.831
+btc_trade_volume_log                     0.2462      1.184      0.208      0.835      -2.076       2.568
+btc_transaction_fees_log               -11.5483      2.904     -3.977      0.000     -17.244      -5.853
+btc_output_volume_log                   -1.3548      2.415     -0.561      0.575      -6.092       3.382
+btc_estimated_transaction_volume_log    -0.7853      2.968     -0.265      0.791      -6.607       5.036
+==============================================================================
+Omnibus:                      570.332   Durbin-Watson:                   0.367
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):            38232.929
+Skew:                           0.510   Prob(JB):                         0.00
+Kurtosis:                      24.981   Cond. No.                     8.44e+08
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 8.44e+08. This might indicate that there are
+strong multicollinearity or other numerical problems.
